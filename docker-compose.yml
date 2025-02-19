@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: node_app
+    build: .
+    volumes:
+      - ./app:/app  # ローカルのファイルをコンテナにマウント
+      - /app/node_modules  # node_modules はマウントしない（ホスト環境と分離）
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    command: ["npm", "run", "dev"]

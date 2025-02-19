@@ -1,0 +1,2 @@
+商品,https://example.com/cat/aw/sagyo/tw/02.html
+新商品,https://example.com/cat/aw/sagyo/bb/45.html
