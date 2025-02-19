@@ -6,7 +6,7 @@ Kサイト用にカスタマイズした画像の存在有無確認用の雛形�
 ```javascript
 const { loadImage } = require("@napi-rs/canvas");
 
-function checkImages(imageUrls)
+function checkImages(name,imageUrls)
 {
   imageUrls.forEach(async (imgUrl) => {
     try {
